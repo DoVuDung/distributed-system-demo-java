@@ -21,7 +21,7 @@ public class CreateSocket {
          * socket tao nhung chua ket noi chua tao
          */
         try {
-            InetAddress addr = InetAddress.getByName("www.google.com");//chuyen dia chi web vao dia chi socket
+            InetAddress addr = InetAddress.getByName("www.andydo05.works");//chuyen dia chi web vao dia chi socket
             int port = 80;//port co gia tri tu 0 -> 65655
             //b1: tao socket client
             Socket socket = new Socket(addr, port);

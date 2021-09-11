@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
  * @author Andy
  */
 public class LookForPorts {
-
+    
     public static void main(String[] args) throws IOException {
         //khi ma ip di vao may, thì sẽ đi qua IO stream(Chuỗi, Byte)
         /**
@@ -23,6 +23,7 @@ public class LookForPorts {
          * có args[0], args[1]: dùng cho hacking
          *
          */
+ 
         Socket Client;
         String host = "";
         if (args.length > 0) {

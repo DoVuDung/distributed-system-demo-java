@@ -21,15 +21,18 @@ public class ServerHello {
         try {
             //b1: tao socket, mo port 9999
             ServerSocket server = new ServerSocket(9999);
-            System.out.println("Server: server is working");
+            System.out.println("Server: server is working");//
+            
             //b2: thuc hien lang nghe ket noi tu server den client
             Socket client = server.accept();//client la socket cua server
             System.out.println("Server: Server is connected with client");
+            
             //b3: goi/nhan du lieu client
             PrintWriter output = new PrintWriter(client.getOutputStream(), true);//out: ghi du lieu len socket client
             Scanner input =  new Scanner(client.getInputStream());//in: lay du lieu tu socket server len man hinh client
             output.println("Server: hello, how are u?");
             System.out.println("Client: "+input.nextLine());
+            
             //b4: dong ket noi
             client.close();
             server.close();
