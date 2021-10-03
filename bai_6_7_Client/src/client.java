@@ -25,14 +25,14 @@ public class client {
             System.out.println("Hãy nhập vào các số nguyên từ bàn phím:");
             while (true) {
                 Scanner input = new Scanner(System.in);
-                System.out.print("Hay nhap 4 so nguyen tu ban phim theo dang (a,b,c,d): ");
+                System.out.print("Hay nhap 4 so nguyen tu ban phim theo dang (a;b;c;d): ");
                 String inputString = input.nextLine();
                 
                 if (inputString.equals("stop")) {
                     break;
                 }
                 
-                String[] intArr = inputString.split(",");
+                String[] intArr = inputString.split(";");
                 int a = Integer.parseInt(intArr[0]);
                 int b = Integer.parseInt(intArr[1]);
                 int c = Integer.parseInt(intArr[2]);                
