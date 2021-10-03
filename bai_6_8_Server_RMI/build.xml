@@ -7,8 +7,8 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="bai_6_6_ServerRMI" default="default" basedir=".">
-    <description>Builds, tests, and runs the project bai_6_6_ServerRMI.</description>
+<project name="bai_6_8_Server_RMI" default="default" basedir=".">
+    <description>Builds, tests, and runs the project bai_6_8_Server_RMI.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
@@ -58,7 +58,7 @@
 
     An example of overriding the target for project execution could look like this:
 
-        <target name="run" depends="bai_6_6_ServerRMI-impl.jar">
+        <target name="run" depends="bai_6_8_Server_RMI-impl.jar">
             <exec dir="bin" executable="launcher.exe">
                 <arg file="${dist.jar}"/>
             </exec>
