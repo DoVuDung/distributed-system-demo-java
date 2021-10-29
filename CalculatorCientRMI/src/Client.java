@@ -19,7 +19,7 @@ public class Client extends CalculatorImpl{
     public static void main(String[] args) throws RemoteException {
         try {
             System.out.println("Client dang tim doi tuong ");
-            Calculator c = (Calculator)Naming.lookup("rmi://localhost/Mycalculator_Server");
+            Calculator c = (Calculator)Naming.lookup("rmi://localhost/Print");
             System.out.println("hay nhap vao so nguyen n can tinh tong tu ban phim");
             Scanner sc = new Scanner(System.in);
             int n =  Integer.parseInt(sc.nextLine());
